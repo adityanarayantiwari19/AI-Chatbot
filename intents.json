@@ -1,0 +1,239 @@
+{
+  "bot_name": "AI Chatbot Assistant",
+  "fallback_responses": [
+    "I'm not sure I understand that yet.",
+    "Sorry, I don't have an answer for that one.",
+    "Hmm, that's outside what I know right now."
+  ],
+  "detail_without_topic_responses": [
+    "I'd be happy to go into detail! Which topic should I explain?",
+    "Sure, what would you like me to explain in detail?"
+  ],
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "hii", "hiya", "namaste", "good morning", "good afternoon", "good evening"],
+      "responses": [
+        "Hello! Welcome to AI Chatbot Assistant. How can I help you?",
+        "Hi there! What would you like to learn about today?",
+        "Hey! I'm ready to answer your questions about AI, Python and more."
+      ]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": ["how are you", "how are you doing", "how do you do", "what up", "whats up", "sup"],
+      "responses": [
+        "I'm doing great, thank you for asking! What would you like to learn about?",
+        "All good here! Ask me anything about AI, machine learning, NLP or Python."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "see you later", "exit", "quit", "good night", "take care"],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you soon! Feel free to chat again."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "thank you so much", "thank you very much", "thx", "much appreciated"],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime! Let me know if you need anything else."
+      ]
+    },
+    {
+      "tag": "bot_identity",
+      "patterns": ["who are you", "what are you", "your name", "what is your name", "introduce yourself", "tell me about yourself", "who made you", "who created you", "who built you"],
+      "responses": [
+        "I'm AI Chatbot Assistant, a rule-based chatbot built with Python, NLTK and Streamlit as an internship minor project."
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": ["help", "what can you do", "your features", "how can you help me", "what do you know", "what topics do you know"],
+      "responses": [
+        "I can chat and explain these topics: {topics}. Ask a question for a short answer, or say 'explain in detail' for a longer one."
+      ]
+    },
+    {
+      "tag": "artificial_intelligence",
+      "title": "Artificial Intelligence",
+      "patterns": ["what is ai", "what is artificial intelligence", "artificial intelligence", "explain ai", "define ai", "tell me about ai", "ai meaning", "meaning of ai", "introduction to ai"],
+      "short": "Artificial Intelligence (AI) is a field of computer science that builds systems able to perform tasks that normally need human intelligence, such as learning, reasoning and understanding language.",
+      "detailed": [
+        "### What is Artificial Intelligence (AI)?",
+        "Artificial Intelligence is the branch of computer science focused on building machines and software that can perform tasks which normally require human intelligence, for example understanding language, recognising images, making decisions and learning from experience.",
+        "**How does AI work?**\nMost modern AI systems follow three steps:\n1. **Collect data**: examples such as text, images or numbers.\n2. **Learn patterns**: an algorithm finds relationships in the data.\n3. **Make predictions**: the trained system applies those patterns to new inputs.",
+        "**Main areas of AI**\n- **Machine Learning**: learning patterns from data.\n- **Deep Learning**: learning with multi-layer neural networks.\n- **Natural Language Processing**: working with human language.\n- **Computer Vision**: understanding images and video.\n- **Robotics**: AI that acts in the physical world.",
+        "**Everyday examples**\nVoice assistants, spam filters, movie recommendations, map navigation and face unlock on phones.",
+        "**Limitations**\nAI depends on the quality of its training data, can inherit bias from that data, and does not understand the world the way humans do."
+      ],
+      "related": ["machine_learning", "deep_learning", "nlp"]
+    },
+    {
+      "tag": "machine_learning",
+      "title": "Machine Learning",
+      "patterns": ["what is machine learning", "machine learning", "explain machine learning", "define machine learning", "tell me about machine learning", "what is ml", "ml meaning", "how does machine learning work"],
+      "short": "Machine Learning (ML) is a branch of AI in which computers learn patterns from data and use them to make predictions or decisions, instead of following hand-written rules.",
+      "detailed": [
+        "### What is Machine Learning?",
+        "Machine Learning (ML) is a branch of AI in which computers learn patterns from data instead of being programmed with fixed rules. The more good examples a model sees, the better it can predict or decide on new, unseen data.",
+        "**Main types of machine learning**\n1. **Supervised learning**: learns from labelled examples, such as emails marked spam or not spam. Used for classification and regression.\n2. **Unsupervised learning**: finds hidden structure in unlabelled data, such as grouping customers by behaviour (clustering).\n3. **Reinforcement learning**: an agent learns by trial and error using rewards, as in game-playing agents and robots.",
+        "**Typical workflow**\nCollect data, clean it, choose features, train a model, evaluate it on unseen test data, then deploy it.",
+        "**Common algorithms**\nLinear and Logistic Regression, Decision Trees, Naive Bayes, Support Vector Machines, k-Nearest Neighbours and Random Forests.",
+        "**Examples**\nSpam filters, product recommendations, fraud detection and sentiment analysis."
+      ],
+      "related": ["deep_learning", "neural_network", "sentiment_analysis"]
+    },
+    {
+      "tag": "deep_learning",
+      "title": "Deep Learning",
+      "patterns": ["what is deep learning", "deep learning", "explain deep learning", "define deep learning", "tell me about deep learning", "what is dl"],
+      "short": "Deep Learning is a subset of machine learning that uses neural networks with many layers to learn complex patterns from large amounts of data.",
+      "detailed": [
+        "### What is Deep Learning?",
+        "Deep Learning is a subset of machine learning that uses artificial neural networks with many layers (hence 'deep'). Each layer learns a more abstract feature than the one before it, so the model can discover useful features by itself instead of relying on hand-crafted ones.",
+        "**Popular architectures**\n- **CNN (Convolutional Neural Network)**: images and video.\n- **RNN / LSTM**: sequences such as text and speech.\n- **Transformer**: modern language models and translation.",
+        "**What it needs**\nLarge datasets and powerful hardware, usually GPUs, because training involves millions of calculations.",
+        "**Applications**\nSpeech recognition, image recognition, language translation, medical image analysis and self-driving cars.",
+        "**Trade-offs**\nVery accurate on complex data, but it needs a lot of data and computing power, and its decisions are hard to explain."
+      ],
+      "related": ["neural_network", "machine_learning", "computer_vision"]
+    },
+    {
+      "tag": "neural_network",
+      "title": "Neural Networks",
+      "patterns": ["what is a neural network", "neural network", "neural networks", "explain neural networks", "define neural network", "tell me about neural networks", "how do neural networks work", "what is ann"],
+      "short": "A neural network is a computing model inspired by the brain, made of layers of connected 'neurons' that learn to map inputs to outputs by adjusting their weights.",
+      "detailed": [
+        "### What is a Neural Network?",
+        "An artificial neural network is a computing model loosely inspired by the human brain. It is made of layers of connected units called neurons that learn to turn inputs into useful outputs.",
+        "**Structure**\n- **Input layer**: receives the raw data.\n- **Hidden layers**: transform the data step by step.\n- **Output layer**: produces the prediction.",
+        "**What a neuron does**\nIt multiplies each input by a weight, adds a bias, and passes the result through an activation function such as ReLU, sigmoid or softmax.",
+        "**How a network learns**\n1. Forward pass: make a prediction.\n2. Compute the loss: how wrong was it?\n3. Backpropagation: work out how each weight contributed to the error.\n4. Gradient descent: nudge the weights to reduce the error.\nRepeat for many examples until the error is small.",
+        "**Uses**\nImage classification, speech recognition, language models and forecasting."
+      ],
+      "related": ["deep_learning", "machine_learning"]
+    },
+    {
+      "tag": "nlp",
+      "title": "Natural Language Processing (NLP)",
+      "patterns": ["what is nlp", "what is natural language processing", "natural language processing", "explain nlp", "define nlp", "tell me about nlp", "how does nlp work"],
+      "short": "Natural Language Processing (NLP) is the area of AI that helps computers process, analyse and respond to human language.",
+      "detailed": [
+        "### What is Natural Language Processing (NLP)?",
+        "Natural Language Processing is the area of AI that enables computers to read, understand and generate human language, in both text and speech.",
+        "**Common NLP techniques**\n1. **Tokenization**: splitting text into words or sentences.\n2. **Stop-word handling**: dealing with very common words such as 'the' and 'is'.\n3. **Stemming and lemmatization**: reducing words to their root form.\n4. **Part-of-speech tagging**: labelling nouns, verbs and so on.\n5. **Named entity recognition**: finding people, places and organisations.\n6. **Sentiment analysis**: detecting positive or negative opinion.\n7. **Text classification**: sorting text into categories.",
+        "**Applications**\nChatbots, machine translation, search engines, voice assistants, spam filtering and text summarisation.",
+        "**Why it is hard**\nHuman language is ambiguous and depends on context. Sarcasm, slang, spelling mistakes and multiple languages make it difficult for computers.",
+        "**In this chatbot**\nI use tokenization, stemming and fuzzy matching, which are classic NLP techniques."
+      ],
+      "related": ["tokenization", "stemming", "sentiment_analysis", "chatbot"]
+    },
+    {
+      "tag": "computer_vision",
+      "title": "Computer Vision",
+      "patterns": ["what is computer vision", "computer vision", "explain computer vision", "define computer vision", "tell me about computer vision"],
+      "short": "Computer Vision is the area of AI that enables computers to understand and interpret images and video.",
+      "detailed": [
+        "### What is Computer Vision?",
+        "Computer Vision is the area of AI that teaches computers to understand images and video, so they can recognise what is in them and act on it.",
+        "**Common tasks**\n- **Image classification**: what is in this picture?\n- **Object detection**: where are the objects, and what are they?\n- **Segmentation**: which pixels belong to which object?\n- **Face recognition**: who is in the picture?\n- **OCR (Optical Character Recognition)**: reading text from images.",
+        "**Key tools**\nConvolutional Neural Networks (CNNs), OpenCV, TensorFlow and PyTorch.",
+        "**Applications**\nFace unlock, medical imaging, number plate recognition, quality inspection in factories and self-driving cars."
+      ],
+      "related": ["deep_learning", "neural_network"]
+    },
+    {
+      "tag": "python",
+      "title": "Python",
+      "patterns": ["what is python", "python programming", "python language", "explain python", "define python", "tell me about python", "why is python popular"],
+      "short": "Python is a popular, beginner-friendly programming language used in web development, automation, data science and artificial intelligence.",
+      "detailed": [
+        "### What is Python?",
+        "Python is a high-level, general-purpose programming language created by Guido van Rossum and first released in 1991. Its clear, readable syntax makes it one of the easiest languages to learn.",
+        "**Where Python is used**\n- **Web development**: Django, Flask.\n- **Data analysis**: pandas, NumPy, Matplotlib.\n- **AI and machine learning**: scikit-learn, TensorFlow, PyTorch, NLTK.\n- **Automation and scripting**.",
+        "**Why it is popular for AI**\n1. Simple syntax, so you focus on ideas rather than boilerplate.\n2. A huge ecosystem of ready-made AI and data libraries.\n3. A large, helpful community and plenty of tutorials.",
+        "**In this project**\nPython runs the chatbot logic, NLTK handles the language processing and Streamlit builds the web interface."
+      ],
+      "related": ["artificial_intelligence", "machine_learning"]
+    },
+    {
+      "tag": "chatbot",
+      "title": "Chatbots",
+      "patterns": ["what is a chatbot", "what is a chat bot", "chat bot", "chatbot", "chatbots", "explain chatbot", "define chatbot", "tell me about chatbots", "how do chatbots work", "types of chatbots"],
+      "short": "A chatbot is a program that holds a conversation with users in natural language, through text or voice.",
+      "detailed": [
+        "### What is a Chatbot?",
+        "A chatbot is a software program that simulates a conversation with a person using text or voice.",
+        "**Types of chatbots**\n1. **Rule-based**: follows predefined patterns and responses. This is the type I am.\n2. **Retrieval-based / ML-based**: a trained model picks the best response from a set.\n3. **Generative**: a large language model writes new responses.",
+        "**Main components**\n- **User interface**: where the conversation happens.\n- **Language understanding**: works out what the user means (the intent).\n- **Dialogue management**: keeps track of the conversation.\n- **Response generation**: produces the reply.",
+        "**Applications**\nCustomer support, FAQ answering, booking and ordering, education and virtual assistants.",
+        "**Rule-based vs generative**\nRule-based bots are predictable and easy to build but only know what they were given. Generative bots are flexible but harder to control."
+      ],
+      "related": ["nlp", "about_chatbot"]
+    },
+    {
+      "tag": "tokenization",
+      "title": "Tokenization",
+      "patterns": ["what is tokenization", "tokenization", "explain tokenization", "define tokenization", "what is a token", "tokenizer", "what is tokenizing"],
+      "short": "Tokenization is the process of splitting text into smaller units called tokens, usually words or punctuation marks.",
+      "detailed": [
+        "### What is Tokenization?",
+        "Tokenization is the first step in most NLP pipelines. It splits a piece of text into smaller units called tokens, which are usually words, numbers or punctuation marks.",
+        "**Example**\nThe sentence 'Chatbots are fun!' becomes the tokens: Chatbots | are | fun | !",
+        "**Types of tokenization**\n- **Word tokenization**: splits text into words.\n- **Sentence tokenization**: splits text into sentences.\n- **Subword tokenization**: splits rare words into pieces, as used by modern language models.",
+        "**Why it matters**\nComputers cannot work with raw sentences directly. Tokens give the program individual units it can compare, count and match.",
+        "**In this chatbot**\nEvery message you send is tokenized with NLTK before it is compared with my known patterns."
+      ],
+      "related": ["stemming", "nlp"]
+    },
+    {
+      "tag": "stemming",
+      "title": "Stemming",
+      "patterns": ["what is stemming", "stemming", "explain stemming", "define stemming", "what is a stemmer", "porter stemmer", "what is lemmatization", "stemming vs lemmatization"],
+      "short": "Stemming reduces words to their root form so that different forms of a word, like 'learning' and 'learned', can be treated as the same word.",
+      "detailed": [
+        "### What is Stemming?",
+        "Stemming is an NLP technique that cuts words down to a common root, called the stem, so that different forms of the same word can be matched.",
+        "**Example**\nlearning, learned and learns all become **learn**. running becomes **run**.",
+        "**The Porter Stemmer**\nA popular rule-based algorithm that strips common English endings such as -ing, -ed and -es. It is fast, but the stem is not always a real word. For instance 'studies' becomes 'studi'.",
+        "**Stemming vs lemmatization**\nLemmatization uses a dictionary to return the proper base word (for example 'better' becomes 'good'). It is more accurate but slower than stemming.",
+        "**In this chatbot**\nI stem every word in your message and in my known patterns, so 'explaining', 'explained' and 'explain' all match."
+      ],
+      "related": ["tokenization", "nlp"]
+    },
+    {
+      "tag": "sentiment_analysis",
+      "title": "Sentiment Analysis",
+      "patterns": ["what is sentiment analysis", "sentiment analysis", "explain sentiment analysis", "define sentiment analysis", "tell me about sentiment analysis"],
+      "short": "Sentiment analysis is an NLP task that determines whether a piece of text expresses a positive, negative or neutral opinion.",
+      "detailed": [
+        "### What is Sentiment Analysis?",
+        "Sentiment analysis, also called opinion mining, is an NLP task that works out whether a piece of text expresses a positive, negative or neutral opinion.",
+        "**Approaches**\n1. **Lexicon-based**: counts positive and negative words from a dictionary.\n2. **Machine learning**: trains a classifier such as Naive Bayes, SVM or Logistic Regression on labelled reviews, using features like TF-IDF.\n3. **Deep learning**: uses neural networks or transformers for better context understanding.",
+        "**Applications**\nProduct review analysis, social media monitoring, customer feedback and brand reputation tracking.",
+        "**Challenges**\nSarcasm, negation ('not good'), slang, emojis and mixed opinions in one sentence."
+      ],
+      "related": ["nlp", "machine_learning"]
+    },
+    {
+      "tag": "about_chatbot",
+      "title": "How This Chatbot Works",
+      "patterns": ["how do you work", "how does this chatbot work", "how were you built", "how are you built", "what technology do you use", "your technology", "explain this project", "about this project"],
+      "short": "I'm a rule-based chatbot. I clean and tokenize your message, stem the words, compare them with the patterns in my knowledge base, and reply with the best match.",
+      "detailed": [
+        "### How This Chatbot Works",
+        "I am a rule-based chatbot. I don't generate text; I find the closest known question and return its prepared answer. Every message goes through this pipeline:",
+        "1. **Normalisation**: the text is lower-cased and punctuation is removed.\n2. **Tokenization**: NLTK splits the message into words.\n3. **Stemming**: the Porter stemmer reduces each word to its root.\n4. **Pattern matching**: each word is given a weight (filler words like 'is' count less than topic words like 'nlp') and I score how much of each known pattern appears in your message. Small spelling mistakes are tolerated using edit distance.\n5. **Confidence check**: if the best score is below 60%, I admit I don't know instead of guessing.\n6. **Answer selection**: I give a short answer by default and a detailed one if you use words like 'detail' or 'elaborate'.\n7. **Context memory**: I remember the last topic, so 'tell me more' continues the previous answer.",
+        "**Technology stack**\nPython, NLTK, Streamlit, and a JSON file (intents.json) as the knowledge base.",
+        "**Limitations**\nI only know the topics in my knowledge base, I don't learn from conversations, and I don't truly understand language.",
+        "**Possible future work**\nA trained machine-learning intent classifier, sentiment analysis of user messages, and connecting to a knowledge base or an API."
+      ],
+      "related": ["chatbot", "nlp"]
+    }
+  ]
+}

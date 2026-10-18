@@ -1,0 +1,99 @@
+﻿message,expected,predicted,confidence_percent,correct
+hello,greeting,greeting,100.0,True
+Hi,greeting,greeting,100.0,True
+hey there,greeting,greeting,100.0,True
+good morning,greeting,greeting,100.0,True
+Good evening!,greeting,greeting,100.0,True
+hii,greeting,greeting,100.0,True
+namaste,greeting,greeting,100.0,True
+hello bot,greeting,greeting,80.0,True
+how are you,how_are_you,how_are_you,100.0,True
+how are you doing today,how_are_you,how_are_you,80.0,True
+what's up,how_are_you,how_are_you,100.0,True
+bye,goodbye,goodbye,100.0,True
+goodbye,goodbye,goodbye,100.0,True
+see you later,goodbye,goodbye,100.0,True
+ok bye,goodbye,goodbye,100.0,True
+quit,goodbye,goodbye,100.0,True
+good night,goodbye,goodbye,100.0,True
+thanks,thanks,thanks,100.0,True
+thank you,thanks,thanks,100.0,True
+thank you so much,thanks,thanks,100.0,True
+thanks a lot,thanks,thanks,80.0,True
+who are you,bot_identity,bot_identity,100.0,True
+what is your name,bot_identity,bot_identity,100.0,True
+introduce yourself,bot_identity,bot_identity,100.0,True
+who created you,bot_identity,bot_identity,100.0,True
+tell me about yourself,bot_identity,bot_identity,100.0,True
+what can you do,capabilities,capabilities,100.0,True
+help,capabilities,capabilities,100.0,True
+how can you help me,capabilities,capabilities,100.0,True
+what topics do you know,capabilities,capabilities,100.0,True
+what is ai,artificial_intelligence,artificial_intelligence,100.0,True
+What is artificial intelligence?,artificial_intelligence,artificial_intelligence,100.0,True
+explain ai,artificial_intelligence,artificial_intelligence,100.0,True
+define artificial intelligence,artificial_intelligence,artificial_intelligence,100.0,True
+tell me about AI,artificial_intelligence,artificial_intelligence,100.0,True
+WHAT IS AI,artificial_intelligence,artificial_intelligence,100.0,True
+what is artifical inteligence,artificial_intelligence,artificial_intelligence,100.0,True
+what is machine learning,machine_learning,machine_learning,100.0,True
+explain machine learning,machine_learning,machine_learning,100.0,True
+machine learning,machine_learning,machine_learning,100.0,True
+what is ml,machine_learning,machine_learning,100.0,True
+what is machne learnig,machine_learning,machine_learning,100.0,True
+how does machine learning work,machine_learning,machine_learning,100.0,True
+what is deep learning,deep_learning,deep_learning,100.0,True
+deep learning,deep_learning,deep_learning,100.0,True
+explain deep learning in detail,deep_learning,deep_learning,100.0,True
+define deep learnig,deep_learning,deep_learning,100.0,True
+what is a neural network,neural_network,neural_network,100.0,True
+neural networks,neural_network,neural_network,100.0,True
+explain neural netwrk,neural_network,neural_network,100.0,True
+how do neural networks work,neural_network,neural_network,100.0,True
+what is nlp,nlp,nlp,100.0,True
+natural language processing,nlp,nlp,100.0,True
+explain nlp,nlp,nlp,100.0,True
+explain in detail about nlp,nlp,nlp,100.0,True
+how does nlp work,nlp,nlp,100.0,True
+what is nlp used for,nlp,nlp,80.0,True
+tell me about natural language processing,nlp,nlp,100.0,True
+what is computer vision,computer_vision,computer_vision,100.0,True
+computer vision,computer_vision,computer_vision,100.0,True
+explain computer vision in detail,computer_vision,computer_vision,100.0,True
+what is python,python,python,100.0,True
+python programming,python,python,100.0,True
+explain python,python,python,100.0,True
+what is pyhton,python,python,100.0,True
+why is python popular,python,python,100.0,True
+what is a chatbot,chatbot,chatbot,100.0,True
+chatbots,chatbot,chatbot,100.0,True
+how do chatbots work,chatbot,chatbot,100.0,True
+explain chatbot in detail,chatbot,chatbot,100.0,True
+types of chatbots,chatbot,chatbot,100.0,True
+what is tokenization,tokenization,tokenization,100.0,True
+explain tokenization,tokenization,tokenization,100.0,True
+what is a token,tokenization,tokenization,100.0,True
+tokenization in detail,tokenization,tokenization,100.0,True
+what is tokanization,tokenization,tokenization,100.0,True
+what is stemming,stemming,stemming,100.0,True
+explain stemming,stemming,stemming,100.0,True
+porter stemmer,stemming,stemming,100.0,True
+what is lemmatization,stemming,stemming,100.0,True
+what is sentiment analysis,sentiment_analysis,sentiment_analysis,100.0,True
+sentiment analysis,sentiment_analysis,sentiment_analysis,100.0,True
+explain sentiment analysis in detail,sentiment_analysis,sentiment_analysis,100.0,True
+how do you work,about_chatbot,about_chatbot,100.0,True
+how does this chatbot work,about_chatbot,about_chatbot,100.0,True
+what technology do you use,about_chatbot,about_chatbot,100.0,True
+how were you built,about_chatbot,about_chatbot,100.0,True
+about this project,about_chatbot,about_chatbot,100.0,True
+tell me about cooking,fallback,fallback,22.5,True
+what is the weather today,fallback,fallback,30.0,True
+who won the cricket match,fallback,fallback,20.0,True
+what is the capital of france,fallback,fallback,30.0,True
+recommend a movie,fallback,fallback,7.5,True
+how to cook pasta,fallback,fallback,20.0,True
+asdfgh,fallback,fallback,0.0,True
+what is the price of gold,fallback,fallback,40.0,True
+can you book a flight,fallback,fallback,30.0,True
+play some music,fallback,fallback,0.0,True
